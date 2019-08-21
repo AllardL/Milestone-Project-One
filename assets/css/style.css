@@ -14,6 +14,12 @@
 
 .title3 {
     font-size: 1.25em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.title4 {
+    font-size: 1.25em;
     font-weight: 500;
     margin: 0;
 }
@@ -158,6 +164,10 @@ section ul {
     padding: 0;
 }
 
+li ul {
+    margin: 0 0 0 1em;
+}
+
 section .borderstyle {
     border-style: outset;
     background-color: rgba(190,190,190, 0.9);
@@ -169,11 +179,42 @@ section .centered {
     margin-top: 3em;
 }
 
+/* ----------------------------------------Main Page Projects ------------*/
+
+.carousel {
+    top: -12vh;
+}
+
+
+.pr_carousel {
+    background-color: rgb(160, 177, 253);
+    height: 60vh;
+    margin-top: 0vh;
+}
+
+.carousel-item {
+    top: 10vh;
+    height: 60vh;
+    width: 80%;
+    left: 10%;
+}
+
+.carousel-item img {
+    max-height: 40vh;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.carousel-caption {
+    bottom: 10vh;
+    color: black;
+}
+
 
 /* ----------------------------------------Footer------------*/
 
 #footer-details {
-    position: relative;
+    position: absolute;
     margin-top: 10px;
     padding: 10px;
     background-color: rgba(190,190,190, 0.9)
@@ -203,6 +244,14 @@ section .centered {
         margin: 0;
     }
 
+    .title3 {
+        font-size: 1.8em;
+    }
+
+    .title4 {
+        font-size: 1.4em;
+    }
+
     .backgroundimage {
         visibility: visible;
     }
@@ -214,7 +263,7 @@ section .centered {
 
     section .centered {
         text-align: center;
-        margin-top: 10vh;
+        margin-top: 8vh;
         margin-bottom: 8vh;
     }
 }

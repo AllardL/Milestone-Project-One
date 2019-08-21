@@ -27,5 +27,9 @@ The website is hosted on GitHub pages. However once it is completele and agreed 
 
 ## Media
 The background was taken from [freeimages](https://freeimages.com/) for the rest the pictures are my own.
+Pictures of projects are of the respective clients.
+Snowpark Muscat Oman - [Giebros Technics Projects](http://giebrostechnics.nl/en/home/) - [Unlimited Snow](https://unlimitedsnow.com/)
+Quatuor - [VK Engineering](https://www.vkgroup.be)
+VRT headquarter - [VK Engineering](https://www.vkgroup.be)
 
-### This website is only made for educational use. 
+### This website is only for educational use. 
