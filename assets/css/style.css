@@ -207,8 +207,6 @@ section .centered {
 .carousel-item {
     top: 5vh;
     height: 60vh;
-    width: 80%;
-    left: 10%;
 }
 
 .carousel-item img {
@@ -218,12 +216,9 @@ section .centered {
 }
 
 .carousel-caption {
-    bottom: 10vh;
+    top: 180px;
     color: black;
-    background-color: rgba(255, 255, 255, 0.7);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(172, 172, 172);
 }
 
 
@@ -251,6 +246,31 @@ section .centered {
     width: 100px;
     border-width: 1.5px;
     border-radius: 50%;
+}
+
+/* ----------------------------------------Main Contact Page ------------*/
+
+form {
+    height: fit-content;
+    bottom: 11vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.map {
+    bottom: 9vh;
+    margin-left: 0;
+}
+
+.mapouter {
+    right: 305px;
+    margin-left: 0;
+    margin-right: auto!important;
 }
 
 /* ----------------------------------------Footer------------*/
@@ -335,6 +355,33 @@ section .centered {
         margin-top: 0!important;
         margin-bottom: 1em!important;
     }
+
+    .carousel-caption {
+        top: 550px;
+        height: 100px;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-item {
+        top: 5vh;
+        height: 60vh;
+    }
+
+    .map {
+        bottom: 9vh;
+        margin-left: 0;
+    }
+    
+    .mapouter {
+        position: relative;
+        margin-left: 0;
+        margin-right: auto!important;
+    }
+    
 }
 
 @media(min-width: 992px) {
