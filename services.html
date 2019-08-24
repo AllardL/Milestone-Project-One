@@ -15,7 +15,7 @@
 </head>
 <body>
      <!--HEADER WITH MENU BUTTON-->
-    <header>
+     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
@@ -26,119 +26,126 @@
                         <p class="title1">TiMBIM</p>
                         <p class="title2">Global BIM Services</p>
                     </div>
-                    <div class="col-2 dropdownmenu">
-                        <p>
-                            <a class="btn btn-primary" data-toggle="collapse" href="#menu" role="button" aria-expanded="false" aria-controls="menu"> <i class="fa fa-bars"></i>
-                            </a>
-                        </p>
-                        <div class="collapse multi-collapse" id="menu">
-                            <ul>
-                                <li><a class='page-scroll' href="index.html">Home</a></li>
-                                <li><a class='page-scroll' href="services.html">Our services</a></li>
-                                <li><a class='page-scroll' href="project.html">Projects</a></li>
-                                <li><a class='page-scroll' href="AboutUs.html">About Us</a></li>
-                                <li><a class='page-scroll' href="Contact.html">Contact</a></li>
-                            </ul>
+                    <div class="col-2 dropleft">
+                        <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i>
+                        </button>
+
+                        <div class="dropdown-menu dropleft" id="dropdownmenu" aria-labelledby="dropdownMenuButton">
+                            <a class='dropdown-item' href="index.html">Home</a>
+                            <a class='dropdown-item' href="services.html">Our services</a>
+                            <a class='dropdown-item' href="project.html">Projects</a>
+                            <a class='dropdown-item' href="AboutUs.html">About Us</a>
+                            <a class='dropdown-item' href="Contact.html">Contact</a>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="container-fluid block">
+    <section class="container-fluid block" id="services">
         <div class="block">
-            <div>
-                <a><img src="assets/images/building-3d-and-wireframe-3-1207552.jpg" alt="" class="backgroundimage"></a>
-            </div>  
-            <div class="row">      
+
+            <div class="row main">      
                 <div class="col-12 centered">
                     <p class="title3"><u>RANGE OF SERVICES</u></p>
                     <P>We provide a wide range of BIM services starting from the conceptual design phase untill maintenance phase.<br>
                         Together with our partners we promiss you to deliver the best service possible.</p>
                 </div>
 
-                <div class="col-11 col-lg-3 borderstyle">
-                    <p class="title4"><u>Project Management Services</u></p>
-                    <ul>
-                        <li>BIM Management and Coordination</li>                        
-                        <li>Bid Process Management:
-                            <ul>
-                                <li>Conceptual planning</li>
-                                <li>Preliminary Engineering Design and cost estimation</li>
-                                <li>Bid / proposal preparation</li>
-                                <li>Preparing Request for proposals (RFP)</li>
-                                <li>Preparing Tender documents for various contracts</li>
-                                <li>Organise and assist in pre-bid meetings</li>
-                                <li>Bid scrutiny, evalutions and recommendations</li>
-                            </ul>
-                        </li>
-                        <li>Project Planning</li>
-                        <li>Project Monitoring</li>
-                        <li>Contract Administration</li>
-                    </ul>
-                </div>
-
-                <div class="col-11 col-lg-3 borderstyle">
-                    <p class="title4"><u>BIM Modelling</u></p>
-                    <ul>
-                        <li>Used Software:
-                            <ul>
-                                <li>Autodesk Revit</li>                                
-                                <li>Autodesk Navisworks</li>
-                                <li>Autodesk BIM360</li>                                
-                                <li>Bentley AecoSim</li>
-                                <li>Archicad</li>
-                                <li>Solibri Model Checker</li>
-                                <li>...</li>
-                            </ul>  
-                        </li>
-                        <li>Modelling</li>                     
-                        <li>Clash Detection</li>
-                        <li>Scheduling (4D)</li>
-                        <li>Simulation (5D)</li>
-                        <li>Detailed Bill Of Quantities (6D)</li>
-                        <li>BIM As Build (7D)</li>
-                    </ul>
-                </div>
-
-                <div class="col-11 col-lg-3 borderstyle">
-                        <p class="title4"><u>Tool Development</u></p>
-                        <ul>
-                            <li>Custom plugins for BIM software</li>
-                            <li>Webtools</li>                     
-                            <li>Custom standalone software tools</li>
-                            <li>Used languages:
+                <div class="bodycontent">
+                    <div class="row">
+                        <div class="card border-secondary mb-3 col-11 col-lg-3" style="max-width: 18rem;">            
+                            <div class="card-header title3">Project Management Services</div>
+                            <div class="card-body text-secondary">
                                 <ul>
-                                    <li>HTML5</li>                                
-                                    <li>CSS3</li>
-                                    <li>Java</li>                                
-                                    <li>Python</li>
-                                    <li>SQL</li>
-                                    <li>C#</li>
+                                    <li>BIM Management and Coordination</li>                        
+                                    <li>Bid Process Management:
+                                        <ul>
+                                            <li>Conceptual planning</li>
+                                            <li>Preliminary Engineering Design and cost estimation</li>
+                                            <li>Bid / proposal preparation</li>
+                                            <li>Preparing Request for proposals (RFP)</li>
+                                            <li>Preparing Tender documents for various contracts</li>
+                                            <li>Organise and assist in pre-bid meetings</li>
+                                            <li>Bid scrutiny, evalutions and recommendations</li>
+                                        </ul>
+                                    </li>
+                                    <li>Project Planning</li>
+                                    <li>Project Monitoring</li>
+                                    <li>Contract Administration</li>
                                 </ul>
-                            </li> 
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
 
+                        <div class="card border-secondary mb-3 col-11 col-md-5 col-lg-3" style="max-width: 18rem;">            
+                            <div class="card-header title3">BIM Modelling</div>
+                            <div class="card-body text-secondary">
+                                <ul>
+                                    <li>Used Software:
+                                        <ul>
+                                            <li>Autodesk Revit</li>                                
+                                            <li>Autodesk Navisworks</li>
+                                            <li>Autodesk BIM360</li>                                
+                                            <li>Bentley AecoSim</li>
+                                            <li>Archicad</li>
+                                            <li>Solibri Model Checker</li>
+                                            <li>...</li>
+                                        </ul>  
+                                    </li>
+                                    <li>Modelling</li>                     
+                                    <li>Clash Detection</li>
+                                    <li>Scheduling (4D)</li>
+                                    <li>Simulation (5D)</li>
+                                    <li>Detailed Bill Of Quantities (6D)</li>
+                                    <li>BIM As Build (7D)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card border-secondary mb-3 col-11 col-md-5 col-lg-3" style="max-width: 18rem;">            
+                            <div class="card-header title3">Tool Development</div>
+                            <div class="card-body text-secondary">
+                                <ul>
+                                    <li>Custom plugins for BIM software</li>
+                                    <li>Webtools</li>                     
+                                    <li>Custom standalone software tools</li>
+                                    <li>Used languages:
+                                        <ul>
+                                            <li>HTML5</li>                                
+                                            <li>CSS3</li>
+                                            <li>Java</li>                                
+                                            <li>Python</li>
+                                            <li>SQL</li>
+                                            <li>C#</li>
+                                        </ul>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <footer class="container-fluid">
         <div id="footer-details" class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
                 <p class="small"><u>HEADQUARTERS</u></p>
                 <p class="small">Stuyvenberg 7</p>
                 <p class="small">1150 Sint-Pieters-Woluwe</p>
                 <p class="small">BELGIUM</p>
             </div>
 
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-4">
                     <p class="small"><u>KUWAIT OFFICE</u></p>
                     <p class="small">Hawally 46300</p>
                     <p class="small">KUWAIT</p>
             </div>
     
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-md-3">
                     <p class="small"><u>INDIAN OFFICA</u></p>
                     <p class="small">Pune</p>
                     <p class="small">Maharashtra 411021</p>
