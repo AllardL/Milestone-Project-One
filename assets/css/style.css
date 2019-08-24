@@ -32,6 +32,12 @@
 
 /* ------------------Header---------------- */
 
+#dropdownmenu {
+    right: 0px;
+    left: auto;
+    transform:(translate3d(0))
+}
+
 header {
     background-color: rgba(133, 133, 133);
     width: 100vw;
@@ -72,11 +78,14 @@ header .container {
     margin-top: 0px;
 }
 
-.dropdownmenu {
+.dropleft {
     padding: 0;
     right: 1em;
     text-align: right;
 }
+
+
+
 
 .title {
     text-align: center;
@@ -147,16 +156,6 @@ section .centered {
 /* ----------------------------------------Main Page------------*/
 
 
-.backgroundimage {
-    visibility: hidden;
-    position: fixed;
-    width: 100%;
-    max-width: 2050px;
-    height: 100%;
-    z-index: -2;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 section ul {
     margin: 1em;
@@ -171,7 +170,6 @@ li ul {
 section .borderstyle {
     border-style: outset;
     background-color: rgba(190,190,190, 0.9);
-    z-index: -1;
 }
 
 section .centered {
@@ -214,10 +212,10 @@ section .centered {
 /* ----------------------------------------Footer------------*/
 
 #footer-details {
-    position: absolute;
-    margin-top: 10px;
+    position: relative;
+    margin-top: 0px;
     padding: 10px;
-    background-color: rgba(190,190,190, 0.9)
+    background-color: rgba(236, 236, 236, 0.9)
 }
 
 
@@ -252,18 +250,17 @@ section .centered {
         font-size: 1.4em;
     }
 
-    .backgroundimage {
-        visibility: visible;
-    }
-
-    #footer-details {
-        position: absolute;
-        bottom: 0;
-    }
-
     section .centered {
         text-align: center;
         margin-top: 8vh;
         margin-bottom: 8vh;
+    }
+
+    .row.main {
+        height: 80vh;
+        width: 100%;
+        background-image: url("../images/building-3d-and-wireframe-3-1207552.jpg");
+        background-size: cover;
+        background-position: center center;
     }
 }
