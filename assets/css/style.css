@@ -35,7 +35,7 @@
 #dropdownmenu {
     right: 0px;
     left: auto;
-    transform:(translate3d(0))
+    width: fit-content;
 }
 
 header {
@@ -193,17 +193,19 @@ section .centered {
 
 .carousel {
     top: -12vh;
+    width: 100vw;
+    max-width: 2025px;
 }
 
-
-.pr_carousel {
-    background-color: rgb(160, 177, 253);
-    height: 60vh;
+.pr-carousel {
+    height: 80vh;
+    width: 100vw;
+    max-width: 2025px;
     margin-top: 0vh;
 }
 
 .carousel-item {
-    top: 10vh;
+    top: 5vh;
     height: 60vh;
     width: 80%;
     left: 10%;
@@ -218,8 +220,38 @@ section .centered {
 .carousel-caption {
     bottom: 10vh;
     color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
+.carousel-indicators {
+    position: relative;
+    width: 100vw;
+    /* right: 0; */
+    top: 75%;
+    /* left: 0; */
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    list-style: none;
+}
+
+
+/* ----------------------------------------Main Page About Us ------------*/
+
+.card img {
+    width: 100px;
+    border-width: 1.5px;
+    border-radius: 50%;
+}
 
 /* ----------------------------------------Footer------------*/
 
@@ -267,7 +299,7 @@ section .centered {
         height: 10vh;
     }
 
-    .row.main {
+    .main {
         height: 100%;
         min-height: 79vh;
         width: 100%;
