@@ -18,6 +18,35 @@ In future I would like to showcase some tools made for different BIM platforms.
 
 ## Content
 All content is written by me.
+Hereby the general design for the pages. I decided to devide the information in columns which turn into rows on smaller devices.
+
+### **Layout with 2 columns**
+![Layout with 2 columns](assets/wireframes/design2columns.jpg)
+
+### **Layout with 3 columns**
+![Layout with 3 columns](assets/wireframes/design3columns.jpg)
+
+##      CONTENT OVERVIEW
+###     **HOME PAGE**
+    Short explenation about who we are, our policy and what we aim to do.
+
+
+###     **OUR SERVICES**
+    Description of our range of service.
+
+
+###     **PROJECTS** 
+    Some projects that we already did.
+
+
+###     **ABOUT US**
+    Short description about the key members of our team
+
+
+###     **CONTACT**
+    Possibility to send a message to one of our offices and a map to the headquarter.
+
+
 
 ## Testing
 The website is tested on different devices from smartphone to workstation with a 27" screen.
