@@ -113,6 +113,15 @@ ul .page-scroll {
 
 /*-------------------------General Layout-------------- */
 
+.main {
+    height: 100%;
+    min-height: 60vh;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    background-size: cover;
+    background-position: center center;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -195,6 +204,8 @@ section .centered {
     top: -12vh;
     width: 100vw;
     max-width: 2025px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .pr-carousel {
@@ -216,9 +227,14 @@ section .centered {
 }
 
 .carousel-caption {
-    top: 180px;
+    position: relative;
+    top: 1em;
     color: black;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(255, 255, 255);
+    left: 1em;
+    right: 1em;
+    width: fit-content;
+    max-width: 90vw;
 }
 
 
@@ -252,7 +268,7 @@ section .centered {
 
 form {
     height: fit-content;
-    bottom: 11vh;
+    top: 0vh;
     background-color: rgba(255, 255, 255, 0.7);
     margin-top: 1em;
     margin-bottom: 1em;
@@ -263,14 +279,14 @@ form {
 }
 
 .map {
-    bottom: 9vh;
+    top: 1vh;
     margin-left: 0;
 }
 
 .mapouter {
-    right: 305px;
     margin-left: 0;
     margin-right: auto!important;
+    margin-bottom: 1em;
 }
 
 /* ----------------------------------------Footer------------*/
@@ -320,8 +336,8 @@ form {
     }
 
     .main {
-        height: 100%;
-        min-height: 79vh;
+        height: fit-content;
+        min-height: 60vh;
         width: 100%;
         background-image: url("../images/building-3d-and-wireframe-3-1207552.jpg");
         background-size: cover;
@@ -338,7 +354,7 @@ form {
     }
 
     .bodycontent .row {
-        bottom: 15vh!important;
+        top: 0;
         margin-top: 2em;
         margin-bottom: 1em;
     }
@@ -357,11 +373,12 @@ form {
     }
 
     .carousel-caption {
-        top: 550px;
+        top: 10px;
         height: 100px;
         color: black;
         background-color: rgba(255, 255, 255, 0.7);
-        width: 800px;
+        width: fit-content;
+        max-width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -372,14 +389,18 @@ form {
     }
 
     .map {
-        bottom: 9vh;
+        top: 1vh;
         margin-left: 0;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 120px;
+        padding-bottom: 2em;
     }
     
     .mapouter {
         position: relative;
-        margin-left: 0;
-        margin-right: auto!important;
+        left: 0;
+        margin-right: auto!impotant;
     }
     
 }
