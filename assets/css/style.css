@@ -213,11 +213,13 @@ section .centered {
     width: 100vw;
     max-width: 2025px;
     margin-top: 0vh;
+    top: 0px;
+    position: relative;
 }
 
 .carousel-item {
-    top: 5vh;
-    height: 60vh;
+    top: 12vh;
+    height: 80vh;
 }
 
 .carousel-item img {
@@ -373,7 +375,7 @@ form {
     }
 
     .carousel-caption {
-        top: 10px;
+        top: 5px;
         height: 100px;
         color: black;
         background-color: rgba(255, 255, 255, 0.7);
@@ -384,7 +386,7 @@ form {
     }
 
     .carousel-item {
-        top: 5vh;
+        top: 7vh;
         height: 60vh;
     }
 
