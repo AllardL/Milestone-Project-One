@@ -1,24 +1,25 @@
 /* ------------------Text---------------- */
 
-.title1 {
-    font-size: 1.75em;
+h1 {
+    font-size: 2em;
     font-weight: 800;
     margin:0;
+    margin-top: 0;
 }
 
-.title2 {
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+h3 {
     font-size: 1.25em;
     font-weight: 600;
     margin: 0;
 }
 
-.title3 {
-    font-size: 1.25em;
-    font-weight: 600;
-    margin: 0;
-}
-
-.title4 {
+h4 {
     font-size: 1.25em;
     font-weight: 500;
     margin: 0;
@@ -115,17 +116,12 @@ ul .page-scroll {
     color: black
 }
 
+p {
+    margin: 0;
+}
 
 /*-------------------------General Layout-------------- */
 
-.main {
-    height: 100%;
-    min-height: 60vh;
-    width: 100%;
-    background-color: rgb(245, 245, 245);
-    background-size: cover;
-    background-position: center center;
-}
 
 .inline-block {
     display: inline-block;
@@ -144,7 +140,6 @@ ul .page-scroll {
 }
 
 .col-12 {
-    margin-bottom: 7px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -152,7 +147,6 @@ ul .page-scroll {
 
 .block {
     display: block;
-    max-block-size: 2050px;
 }
 
 .row {
@@ -161,17 +155,13 @@ ul .page-scroll {
     max-width: 2050px;
 }
 
-section .centered {
-    text-align: center;
-}
-
 .card {
     padding:0;
     background-color: rgba(255, 255, 255, 0.7);
     position: sticky;
     max-width: 1000px!important;
-    margin-top: 0!important;
-    margin-bottom: 1em!important;
+    margin-top: 3vh!important;
+    margin-bottom: 3vh!important;
 }
 
 .border-secondary {
@@ -198,7 +188,10 @@ section .borderstyle {
 
 section .centered {
     text-align: center;
-    margin-top: 3em;
+    padding-top: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 2vh;
 }
 
 /* ----------------------------------------Main Page Projects ------------*/
@@ -240,14 +233,13 @@ section .centered {
     position: relative;
     top: 1em;
     color: black;
-    margin-top:1em;
     left: 0;
     right: 0;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     outline: blue;
     background-color:blue;
     background-size: 100%, 100%;
@@ -257,6 +249,10 @@ section .centered {
 
 
 /* ----------------------------------------Main Page About Us ------------*/
+
+.card-header {
+    text-align: center;
+}
 
 .card img {
     width: 100px;
@@ -270,7 +266,7 @@ form {
     height: fit-content;
     top: 0vh;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-top: 1em;
+    margin-top: 0!important;
     margin-bottom: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -279,14 +275,19 @@ form {
 }
 
 .map {
-    top: 1vh;
-    margin-left: 0;
+    margin-left: -5px;
 }
 
 .mapouter {
-    margin-left: 0;
-    margin-right: auto!important;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    margin-top:1em;
+}
+
+#gmap_canvas {
+    width: 80%;
+    height: 500px;
+    border-width: 1px;
+    border-style: solid;
 }
 
 /* ----------------------------------------Footer------------*/
@@ -311,48 +312,47 @@ form {
         transform: translateY(-0.8em);
     }
 
-    .title1 {
+    h1 {
         font-size: 3.5em;
         margin:0;
     }
 
     
-    .title2 {
+    h2 {
         font-size: 2.5em;
         margin: 0;
     }
 
-    .title3 {
+    h3 {
         font-size: 1.8em;
     }
 
-    .title4 {
-        font-size: 1.4em;
+    h4 {
+        font-size: 1.2em;
     }
 
     section .centered {
         background-color: rgba(112, 96, 255, 0.7);
-        text-align: center;
         width: fit-content;
-        height: 10vh;
+        height: fit-content;
     }
 
     .main {
         height: fit-content;
-        min-height: 69.5vh;
-        width: 100%;
+        min-height: 60vh;
         background-image: url("../images/building-3d-and-wireframe-3-1207552.jpg");
         background-size: cover;
         background-position: center center;
+        padding: 5em;
     }
 
     .mainhome {
         height: fit-content;
-        min-height: 69.5vh;
-        width: 100%;
+        min-height: 60vh;
         background-image: url("../images/building-3d-and-wireframe-12-1207491.jpg");
         background-size: cover;
         background-position: center center;
+        padding: 5em;
     }
 
     .mainprojects {
@@ -366,13 +366,13 @@ form {
 
 
     .card {
-        padding:0;
-        background-color: rgba(255, 255, 255, 0.7);
-        position: sticky;
+        padding: 0;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.9);
         max-width: 1000px!important;
-        margin-top: 0!important;
-        margin-bottom: auto!important;
     }
+
+
 
     .bodycontent .row {
         top: 0;
@@ -381,16 +381,13 @@ form {
     }
 
     .card-header {
-        background-color: rgba(190, 190, 190, 0.8)
+        background-color: rgba(190, 190, 190, 0.8);
     }
 
     #services .card{
         padding:0;
         background-color: rgba(255, 255, 255, 0.7);
-        position: sticky;
         max-width: 1000px!important;
-        margin-top: 0!important;
-        margin-bottom: 1em!important;
     }
 
     .carousel-caption {
@@ -405,13 +402,26 @@ form {
         height: 60vh;
     }
 
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 30px;
+        width: 30px;
+        outline:rgba(0, 0, 0, 0);
+        background-color:rgba(0, 0, 0, 0);
+        background-size: 100%, 100%;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0);
+    }
+
     .map {
-        top: 1vh;
-        margin-left: 0;
-        margin-right: auto;
-        background-color: rgba(255, 255, 255, 0.7);
-        height: 120px;
+        padding-top: 1em!important;
+        margin-top: 0!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        background-color: rgba(255, 255, 255, 0.80);
+        height: fit-content;
+        padding-top:2em;
         padding-bottom: 2em;
+        text-align: center;
     }
     
     .mapouter {
@@ -424,6 +434,11 @@ form {
         right: 0px;
         left: auto;
         width: fit-content;
+    }
+
+    .card h3 {
+        display: inline;
+        text-align: right;
     }
     
 }
@@ -438,4 +453,5 @@ form {
         position: relative;
         bottom: 15vh!important;
     }
+
 }

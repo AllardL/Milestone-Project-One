@@ -21,10 +21,10 @@ All content is written by me.
 Hereby the general design for the pages. I decided to devide the information in columns which turn into rows on smaller devices.
 
 ### **Layout with 2 columns**
-![Layout with 2 columns](assets/wireframes/design2columns.jpg)
+![Layout with 2 columns](assets/wireframes/design2columns.JPG)
 
 ### **Layout with 3 columns**
-![Layout with 3 columns](assets/wireframes/design3columns.jpg)
+![Layout with 3 columns](assets/wireframes/design3columns.JPG)
 
 ##      CONTENT OVERVIEW
 ###     **HOME PAGE**
@@ -50,12 +50,15 @@ Hereby the general design for the pages. I decided to devide the information in 
 
 ## Testing
 The website is tested on different devices from smartphone to workstation with a 27" screen.
+CSS was tested several times on "different devices" using developer tools in different webbrowsers. Using life editing in the webbrowser different settings were tested and improved.
+
+[Freeformatter.com](https://www.freeformatter.com/html-validator.html) was using for code validation. ISO-8859-9 setting was used.
 
 ## Deployment
 The website is hosted on GitHub pages. However once it is completele and agreed on by my collegues it will also be available on http://www.timbim.eu/
 
 ## Media
-The background was taken from [freeimages](https://freeimages.com/) for the rest the pictures are my own.
+The backgroundimages were taken from [freeimages](https://freeimages.com/) for the rest the pictures are my own.
 Pictures of projects are of the respective clients.
 Snowpark Muscat Oman - [Giebros Technics Projects](http://giebrostechnics.nl/en/home/) - [Unlimited Snow](https://unlimitedsnow.com/)
 Quatuor - [VK Engineering](https://www.vkgroup.be)

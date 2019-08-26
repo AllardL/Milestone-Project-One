@@ -14,8 +14,8 @@
     <title>TiMBIM - Global BIM Services</title>
 </head>
 <body>
-     <!--HEADER WITH MENU BUTTON-->
-     <header>
+    <!--HEADER WITH MENU BUTTON-->
+    <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
@@ -23,8 +23,8 @@
                         <img src="assets/images/LOGO_small.jpg" alt="" class="logo">
                     </div>
                     <div class="col-8 title">
-                        <p class="title1">TiMBIM</p>
-                        <p class="title2">Global BIM Services</p>
+                        <h1>TiMBIM</h1>
+                        <h2>Global BIM Services</h2>
                     </div>
                     <div class="col-2 dropleft">
                         <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-bars"></i>
@@ -45,50 +45,51 @@
     </header>
 
     <section class="container-fluid block">
-        <div class="block">
-            
-            <div class="row main">      
-                <div class="col-12 centered">
-                    <p class="title3"><u>Contact Page</u></p>
+        <div class="row">      
+            <div class="col-12 centered">
+               <h3><u>Contact Page</u></h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid block">   
+        <div class="row main">      
+            <form class="col-11 col-lg-5">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
 
-                <form class="col-11 col-md-5">
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    </div>
+                <div class="form-group">
+                    <label for="office">Which office do you want to contact?</label>
+                    <select class="form-control" id="office">
+                    <option>Belgium Office</option>
+                    <option>Kuwait Office</option>
+                    <option>India Office</option>
+                    </select>
+                </div>
 
-                    <div class="form-group">
-                        <label for="office">Which office do you want to contact?</label>
-                        <select class="form-control" id="office">
-                        <option>Belgium Office</option>
-                        <option>Kuwait Office</option>
-                        <option>India Office</option>
-                        </select>
-                    </div>
+                <div class="form-group">
+                    <label for="textmessage">Your message</label>
+                    <textarea class="form-control" id="textmessage" rows="18"></textarea>
+                </div>
 
-                    <div class="form-group">
-                        <label for="textmessage">Your message</label>
-                        <textarea class="form-control" id="textmessage" rows="18"></textarea>
-                    </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
 
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
-
-                <div class="col-11 col-md-4 map">
-                    <div class="bold">
-                        <p><U>HEADQUARTER</U><br>
-                        Allard Leenaerts<br>
-                        Stuyvenberg 7<br>
-                        1150 Sint-Pieters-Woluwe<br>
-                        BELGIUM</p>
-                    </div>
-                    <div class="mapouter">
-                        <div class="gmap_canvas"><iframe width="300" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Stuyvenberg%207%2C%20sint-pieters-woluwe%2C%20belgium&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-                    </div>
-                </div>  
-                 
-            </div>
+            <div class="col-11 col-lg-5 map">
+                <div class="bold">
+                    <p><U>HEADQUARTER</U><br>
+                    Allard Leenaerts<br>
+                    Stuyvenberg 7<br>
+                    1150 Sint-Pieters-Woluwe<br>
+                    BELGIUM</p>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Stuyvenberg%207%2C%20sint-pieters-woluwe%2C%20belgium&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></div>
+                </div>
+            </div>  
+                
         </div>
     </section>
 
