@@ -52,7 +52,7 @@ Hereby the general design for the pages. I decided to devide the information in 
 The website is tested on different devices from smartphone to workstation with a 27" screen.
 CSS was tested several times on "different devices" using developer tools in different webbrowsers. Using life editing in the webbrowser different settings were tested and improved.
 
-[Freeformatter.com](https://www.freeformatter.com/html-validator.html) was using for code validation. ISO-8859-9 setting was used.
+[Freeformatter.com](https://www.freeformatter.com/html-validator.html) was using for code validation. ISO-8859-9 setting was used. During testing was mentioned to better use CSS for some settings instead of iframes which I adjusted.
 
 ## Deployment
 The website is hosted on GitHub pages. However once it is completele and agreed on by my collegues it will also be available on http://www.timbim.eu/
