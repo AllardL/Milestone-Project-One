@@ -29,6 +29,11 @@
     margin: 0;
 }
 
+.bold p {
+    font-size: 1em;
+    font-weight: 700;
+}
+
 
 /* ------------------Header---------------- */
 
@@ -176,8 +181,6 @@ section .centered {
 
 /* ----------------------------------------Main Page------------*/
 
-
-
 section ul {
     margin: 1em;
     margin-top: 0em;
@@ -201,7 +204,7 @@ section .centered {
 /* ----------------------------------------Main Page Projects ------------*/
 
 .carousel {
-    top: -12vh;
+    position: relative;
     width: 100vw;
     max-width: 2025px;
     margin-left:auto;
@@ -228,33 +231,28 @@ section .centered {
     margin: auto;
 }
 
+.page-scroll {
+    background-color: rgba(177, 168, 255, 0.7);
+    width: 100%;
+}
+
 .carousel-caption {
     position: relative;
     top: 1em;
     color: black;
-    background-color: rgb(255, 255, 255);
-    left: 1em;
-    right: 1em;
-    width: fit-content;
-    max-width: 90vw;
+    margin-top:1em;
+    left: 0;
+    right: 0;
 }
 
-
-.carousel-indicators {
-    position: relative;
-    width: 100vw;
-    /* right: 0; */
-    top: 75%;
-    /* left: 0; */
-    z-index: 15;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    list-style: none;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    outline: blue;
+    background-color:blue;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid blue;
 }
 
 
@@ -333,7 +331,9 @@ form {
     }
 
     section .centered {
+        background-color: rgba(112, 96, 255, 0.7);
         text-align: center;
+        width: fit-content;
         height: 10vh;
     }
 
@@ -345,6 +345,25 @@ form {
         background-size: cover;
         background-position: center center;
     }
+
+    .mainhome {
+        height: fit-content;
+        min-height: 69.5vh;
+        width: 100%;
+        background-image: url("../images/building-3d-and-wireframe-12-1207491.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .mainprojects {
+        height: fit-content;
+        min-height: 69.5vh;
+        width: 100%;
+        background-image: url("../images/construction-1217562.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
 
     .card {
         padding:0;
@@ -375,14 +394,10 @@ form {
     }
 
     .carousel-caption {
-        top: 5px;
+        position: absolute;
+        top: 42vh;
         height: 100px;
         color: black;
-        background-color: rgba(255, 255, 255, 0.7);
-        width: fit-content;
-        max-width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .carousel-item {
@@ -403,6 +418,12 @@ form {
         position: relative;
         left: 0;
         margin-right: auto!important;
+    }
+
+    #dropdownmenu {
+        right: 0px;
+        left: auto;
+        width: fit-content;
     }
     
 }
